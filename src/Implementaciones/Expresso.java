@@ -4,7 +4,7 @@
  */
 package Implementaciones;
 
-import Interfaces.Bebida;
+import Clases.Bebida;
 
 /**
  *
