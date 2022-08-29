@@ -16,7 +16,7 @@ public class DarkRoast extends Beverage{
     }
 
     @Override
-    public void Costo() {
-        System.out.println(40);
+    public double Costo() {
+        return 40;
     }
 }

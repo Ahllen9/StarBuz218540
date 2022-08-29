@@ -8,12 +8,12 @@ package StarbuzCafe;
  *
  * @author arturo
  */
-public abstract class Beverage {
-    public String Descrpcion;
-
-    public String getDescrpcion() {
-        return Descrpcion;
-    }
+public abstract class Complemento extends Beverage{
+    Beverage bebida;
     
-    public abstract double Costo();
+    public abstract String getDescripcion();
+    
+    public double Costo(){
+        return bebida.Costo();
+    };
 }

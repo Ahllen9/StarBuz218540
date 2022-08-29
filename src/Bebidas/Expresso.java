@@ -16,7 +16,7 @@ public class Expresso extends Beverage{
     }
 
     @Override
-    public void Costo() {
-        System.out.println(65);
+    public double Costo() {
+        return 65;
     }
 }

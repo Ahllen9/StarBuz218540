@@ -2,22 +2,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Bebidas;
+package Decoradores;
 
-import StarbuzCafe.Beverage;
+import StarbuzCafe.Complemento;
 
 /**
  *
  * @author arturo
  */
-public class HouseBlend extends Beverage{
+public class Soy extends Complemento {
 
-    public HouseBlend() {
-        super.Descrpcion = "HouseBlend";
+    @Override
+    public String getDescripcion() {
+        return super.Descrpcion+" "+"soy";
     }
 
     @Override
     public double Costo() {
-        return 25;
+        return super.Costo()+10;
     }
+    
 }

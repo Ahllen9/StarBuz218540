@@ -16,7 +16,7 @@ public class Decaf extends Beverage{
     }
 
     @Override
-    public void Costo() {
-        System.out.println(50);
+    public double Costo() {
+        return 50;
     }
 }
