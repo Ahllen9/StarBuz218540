@@ -11,12 +11,13 @@ import StarbuzCafe.Beverage;
  * @author arturo
  */
 public class DarkRoast extends Beverage{
+    
     public DarkRoast() {
         super.Descrpcion = "DarkRoast";
     }
 
     @Override
-    public double Costo() {
+    public double getCosto() {
         return 40;
     }
 }

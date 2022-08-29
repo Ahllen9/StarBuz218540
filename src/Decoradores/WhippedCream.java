@@ -4,6 +4,7 @@
  */
 package Decoradores;
 
+import StarbuzCafe.Beverage;
 import StarbuzCafe.Complemento;
 
 /**
@@ -12,13 +13,19 @@ import StarbuzCafe.Complemento;
  */
 public class WhippedCream extends Complemento{
 
+    private final Beverage bebida;
+
+    public WhippedCream(Beverage bebida) {
+        this.bebida = bebida;
+    }
+    
     @Override
     public String getDescripcion() {
-        return super.Descrpcion+" "+"WhippedCream";
+        return bebida.getDescrpcion()+" soy";
     }
 
     @Override
-    public double Costo() {
-        return super.Costo()+10;
+    public double getCosto() {
+        return bebida.getCosto()+10;
     }
 }

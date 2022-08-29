@@ -4,6 +4,7 @@
  */
 package Decoradores;
 
+import StarbuzCafe.Beverage;
 import StarbuzCafe.Complemento;
 
 /**
@@ -11,15 +12,20 @@ import StarbuzCafe.Complemento;
  * @author arturo
  */
 public class Soy extends Complemento {
+    private final Beverage bebida;
 
+    public Soy(Beverage bebida) {
+        this.bebida = bebida;
+    }
+    
     @Override
     public String getDescripcion() {
-        return super.Descrpcion+" "+"soy";
+        return bebida.getDescrpcion()+" soy";
     }
 
     @Override
-    public double Costo() {
-        return super.Costo()+10;
+    public double getCosto() {
+        return bebida.getCosto()+10;
     }
     
 }
