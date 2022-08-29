@@ -8,6 +8,13 @@ package StarbuzCafe;
  *
  * @author arturo
  */
-public class NewClass {
+public abstract class Beverage {
+    public String Descrpcion;
+
+    public String getDescrpcion() {
+        return Descrpcion;
+    }
     
+    public void Costo(){
+    }
 }
