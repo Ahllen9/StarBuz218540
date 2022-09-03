@@ -5,6 +5,7 @@
 package Pruebas;
 
 import Bebidas.HouseBlend;
+import Decoradores.Chocolate;
 import Decoradores.Milk;
 import StarbuzCafe.Beverage;
 import StarbuzCafe.Complemento;
@@ -20,5 +21,8 @@ public class Test {
         
         Complemento complemento1 = new Milk(bebida1);
         System.out.println(complemento1.getDescripcion()+" $"+complemento1.getCosto());
+        
+        Complemento complemento2 = new Chocolate(bebida1);
+        System.out.println(complemento2.getDescripcion()+" $"+complemento2.getCosto());
     }
 }
